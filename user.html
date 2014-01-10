@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>GARDENING</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<script src="js/myscript.js" type="text/javascript"></script>
+<script src="js/newscript.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- LOGIN PAGE-------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="page1">
+<div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b></div>
+<div data-role="content" id="login" class="main_page">
+    <b>Email </b><input type="text" id="user_email">
+    <b>Password</b><input type="password" id="pwd">	
+	
+	<input type="button"  value="Login" data-theme="a" id="ok" onclick="call()"/>
+	<input type="button"  value="Register" data-theme="a" onclick="register()"/>
+	
+    </div>
+</div>
+</div>
+<!-- Registration---------------------------------------------------------------------------------------------------------------------------->
+
+<div data-role="page" id="page2">
+<div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b></div><br/>
+<div data-role="content"class="main_page">
+<b>Firstname</b><input type="text" id="t1">
+<b>Lastname</b><input type="text" id="t2">
+<b>Email</b><input type="email" id="t3">
+<b>Password</b><input type="password" id="p1">
+<b>Confirm Password</b><input type="password" id="p2">
+<input type="button" value="Submit" data-theme="a" id="b1" onclick="check()">
+</div>
+</div>
+<!--Main Home Page---------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="page3">
+  <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+    <label class="name"></label>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+    </div>
+    <div data-role="content"class="main_page">
+  <p onclick="mygarden()" class="stlye1" align="center" ><img src="images/garden.png" height="75" width="75"border="3"><br/><b>My garden</b></p>
+	
+ <p onclick="settings()" class="stlye1" align="center"><img src="images/settings.png" height="75" width="75"border="3"><br/><b>Settings</b></p>
+ 
+       <p onclick="fun1()" class="stlye1" align="center"><img src="images/settings.png" height="75" width="75"border="3"><br/><b>fun1</b></p>
+	   <p onclick="fun2()" class="stlye1" align="center"><img src="images/settings.png" height="75" width="75"border="3"><br/><b>fun2</b></p>
+	  <p onclick="fun3()" class="stlye1" align="center"><img src="images/settings.png" height="75" width="75"border="3"><br/><b>fun3</b></p>
+	   <p onclick="fun4()" class="stlye1" align="center"><img src="images/settings.png" height="75" width="75"border="3"><br/><b>fun4</b></p>
+	</div>
+  </div>
+
+  <!-- Garden Types---------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="page4">
+    <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<ul data-role="listview" id="content"class="main_page">
+	
+	</ul>
+	<input type="button"value="Create Garden" data-theme="a" onclick="creategarden()">
+ </div>
+ 
+ 
+<div data-role="page" id="page5">
+      settings
+</div>
+
+<!-- HOME PAGE---------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="page6">
+       <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b>
+	     <label class="name"></label>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	   </div>
+	<div data-role="content"class="main_page">
+	   <div class="gardentitle"></div>
+	   
+    <p onclick="garden_detail()"><img src="images/garden_detail.png" height="75" width="75"border="3"><br/><b> Garden Detail</b></p>
+	<p onclick="view_plant_sown()"><img src="images/plant_detail.jpg" height="75" width="75"border="3"><br/><b>Plant Detail</b></p>
+	<p onclick="garden_history()"><img src="images/garden_history.png" height="75" width="75"border="3"><br/><b>Garden History</b></p>
+	<p onclick="plant_fertility()"><img src="images/plant_fertility.png" height="75" width="75"border="3"><br/><b>Garden Fertility</b></p>
+	
+  </div>
+</div>
+<!-- Plant fertility------------------------------------------>
+<div data-role="page" id="page7">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="header" data-theme="d" class="gardentitle"> </div>
+	plantfertility
+</div>
+
+<!-- Garden history------------------------------------------>
+<div data-role="page" id="page8">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="header" data-theme="d" class="gardentitle"> </div>
+	garden history.
+</div>
+
+
+
+<!--Selected garden/available garden-------->
+<div data-role="page" id="page10">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="header" data-theme="d" class="gardentitle"> </div>
+
+	<div data-role="content"class="main_page"><center><b>Added Plants</b></center><br/><br/>
+ 	<ul data-role="listview" id="userplants">
+ 		
+ 	</ul>
+	
+    </div>
+	<input type="button" value="Add Plant" data-theme="a" onclick="select_plant_type()">
+</div>
+<!-- plant detail---------------------------------------->
+
+<div data-role="page" id="page11">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	
+	<div data-role="content">
+		<div><p id="user_plant_id"></p></div>
+	 <p onclick="basic_detail()" class="stlye1" align="center"><img src="images/detail.png" height="75" width="75"border="3"><br/><b>Basic Detail</b></p>
+	  
+	 <p onclick="user_added_pest()" class="stlye1" align="center"><img src="images/pest.png" height="75" width="75"border="3"><br/><b>Pest</b></p>
+	  
+	 <p onclick="" class="stlye1"align="center"><img src="images/insect.png" height="75" width="75"border="3"><br/><b>Insect</b></p>
+	  
+	 <p onclick="" class="stlye1"align="center"><img src="images/insecticide.png" height="75" width="75" border="3"><br/><b>Insecticide</b></p>
+	  
+	 <p onclick="" class="stlye1"align="center"><img src="images/pesticide.bmp" height="75" width="75" border="3"><br/><b>Pesticide</b></p>
+	 </div>
+	<p><img src="images/checkstatus.png"height="100" width="100"onclick="checkstatus()"><br/><br/><b>Check Status</b></p>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------->
+
+<!--Add plant---------------------------------------------------------------------------------------------------->
+<div data-role="page" id="page12">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+       </div>
+       <div data-role="content"class="main_page">
+	<label for="textarea-a"><b>Your Plant's Current Detail</b></label>
+<textarea name="textarea" id="textarea-a" class="ui-disabled">
+Detailsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+</textarea>
+	
+	 <fieldset data-role="controlgroup">
+	<legend><b>Is your plant like this??</b></legend>
+     	<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" onclick="condition()" />
+     	<label for="radio-choice-1">Yes</label>
+
+     	<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" onclick="condition()" />
+     	<label for="radio-choice-2">No</label>
+     </fieldset>
+	</div>
+</div>
+	
+	
+<!-------------------oncheck=no---------------------------------->
+<div data-role="page" id="page13">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+	  <b>Enter Current status of your Plant</b><br/><br/>
+	  <b>1:<i>Colour of leaf?</i></b>
+			<fieldset data-role="controlgroup">
+	  <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+     	<label for="radio-choice-3">Green</label>
+	  <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
+     	<label for="radio-choice-4">Yellow</label>
+			</fieldset>
+	<b>2:<i>Does flowers/buds have grown?</i></b>
+			<fieldset data-role="controlgroup">
+	  <input type="radio" name="radio-choice" id="radio-choice-5" value="choice-5" />
+     	<label for="radio-choice-5">Yes</label>
+	  <input type="radio" name="radio-choice" id="radio-choice-6" value="choice-6" />
+     	<label for="radio-choice-6">No</label>
+			</fieldset>
+	<b>3:<i>Other Question</i></b>
+			<fieldset data-role="controlgroup">
+	  <input type="radio" name="radio-choice" id="radio-choice-7" value="choice-7" />
+     	<label for="radio-choice-7">Yes</label>
+	  <input type="radio" name="radio-choice" id="radio-choice-8" value="choice-8"  />
+     	<label for="radio-choice-8">No</label>
+			</fieldset>
+	<input type="button" data-theme="a" value="Ok">
+</div>
+</div>
+
+<!-------------------oncheck=yes---------------------------------->
+<div data-role="page" id="page14">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+	  yessssss
+	</div>
+</div>
+<!-------------------create garden here---------------------------------->
+<div data-role="page" id="page15">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+		<center><h2>Select your garden type here..</h2></center>
+		
+  <p onclick="gardentype()" class="stlye1" align="center"><img src="images/roof_garden.jpg" id="roof_garden" name="roof_garden"height="75" width="75"border="3"class="gardentype"><br/><b>Roof Type</b></p>
+	
+ <p onclick="gardentype()" class="stlye1" align="center"><img src="images/hanging_garden.jpg"id="hanging_garden" name="hanging_garden"height="75" width="75"border="3"class="gardentype"><br/><b>Hanging Type</b></p>
+    
+ <p onclick="gardentype()" class="stlye1" align="center"><img src="images/pot_garden.jpg"id="pot_garden"name="pot_garden" height="75" width="75"border="3"class="gardentype"><br/><b>Pot Type</b></p>
+ 
+ <p onclick="gardentype()" class="stlye1" align="center"><img src="images/land_garden.jpg"id="land_garden"name="land_garden" height="75" width="75"border="3"class="gardentype"><br/><b>Land Type</b></p>
+	
+ <p onclick="gardentype()" class="stlye1" align="center"><img src="images/closed_garden.jpg"id="closed_garden"name="closed_garden" height="75" width="75"border="3"class="gardentype"><br/><b>Closed</b></p>
+    
+ <p onclick="gardentype()" class="stlye1" align="center"><img src="images/open_garden.jpg"id="open_garden"name="open_garden"height="75" width="75"border="3"class="gardentype"><br/><b>Open</b></p>
+ 
+   </div>
+</div>
+<!--Garden type fillling form---------------------------------------------------->
+<div data-role="page" id="page16">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+	  <form>
+	  <br>
+	  <b>Name</b><input type="text" id="gardenname">
+	  <b>Area</b><input type="text"id="gardenarea">
+	  <input type="button" value="Create" data-theme="a" onclick="abc()">
+	  </form>
+	</div>
+</div>
+<!-----------------------------------------select plant type here-------------------------------->
+<div data-role="page" id="page17">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+	 <div data-role="content"class="main_page"> 
+
+  <p class="stlye1" align="center"><img src="images/flowertype.jpg" height="75" width="75"border="3"onclick="available_plant_type(this.id)" id="flower_type"><br/><b>Flower Type</b></p>
+	
+ <p class="stlye1" align="center"><img src="images/leaftype.jpg" height="75" width="75"border="3" id="leaf_type"onclick="available_plant_type(this.id)"><br/><b>Leaf Type</b></p>
+    
+ <p class="stlye1" align="center"><img src="images/fruittype.jpg" height="75" width="75"border="3" id="fruit_type" onclick="available_plant_type(this.id)"><br/><b>Fruit Type</b></p>
+ </div>
+</div>
+
+<!-- Available detailed plant type incl.(Flower,fruit,leaf) typeeeeeeeeeeeeeeeeeee------------------------------------------------>
+<div data-role="page" id="page18">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+	  <ul data-role="listview" id="plants"></ul>
+	</div>
+</div>
+<!-- General details of plants------------------------------------------------------------>
+<div data-role="page" id="page21">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+	  General details.....
+	  <input type="button" onclick="append_garden()" value="append">
+	</div>
+</div>
+<!--specific garden details showinging date-------------------->
+<div data-role="page" id="page22">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+      <p id="showdate"></p>
+      </div>
+</div>
+<!-- Plants selected by user to be added---->
+<div data-role="page" id="page23">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	   <label class="name"></label><br/>
+       <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+      </div>
+      <div data-role="content"class="main_page">
+      	<p id="plant_description"></p>
+      	<input type="button" value="Add" data-theme="a" onclick="plant_sown()">
+      </div>
+</div>
+<!---------------Plant Basic Detail 4m database------------>
+<div data-role="page" id="page24">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="content"class="main_page">
+		<p id="basic_detail"></p>
+	</div>
+</div>
+
+<!-----------Availabe pest acc to plant in database---------------------------------------------------------------------------------->
+
+<div data-role="page" id="page25">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="content"class="main_page">
+		<center><u><b>Available Pest in Our Database</b></u></center><br/><br/>
+	<ul data-role="listview" id="show_pest_plant_wise">
+		</ul>
+		<br/>
+		<br/>
+	
+</div>
+</div>
+<!-----------Pest added by user---------------------------------------------------------------------------------->
+
+<div data-role="page" id="page26">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="content"class="main_page">
+		<center><u><b>User Added Pest</b></u></center><br/><br/>
+		<ul data-role="listview" id="list_added_pest">
+		</ul>
+		<br/>
+	<input type="button" value="Add New Pest" data-theme="a" onclick="pest_acc_plant()">
+	</div>
+</div>
+<!-----------Selected Pest Detail---------------------------------------------------------------------------------->
+
+<div data-role="page" id="page27">
+      <div data-role="header"class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/g1.jpg" height="60"><b><font color="white" face="tahoma" size="7px">Gardening</font></b><br/>
+	<label class="name"></label><br/>
+  <input type="button" onclick="home()" value="Home" data-theme="a"><input type="button" onclick="logout()" value="Logout" data-theme="a">
+	</div>
+	<div data-role="content">
+		selected pest detail
+		<p id="selected_pest_detail"> </p>
+		<br/>
+		<br/>
+	
+</div>
+</div>
+
+
+</body>
+</html>

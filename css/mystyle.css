@@ -1,0 +1,17 @@
+img
+{
+	border-radius:10px;
+}
+img:hover
+{
+	border-color:brown;
+}
+
+#gardentitle
+{
+	border-color:black;
+}
+
+.heading{ font-size:22px; font-family:Tahoma, Geneva, sans-serif; font-weight:600; line-height:1.5em}
+.main_page{ overflow:hidden; }
+.main_page p{ float:left; margin:10px 5px; text-align:center; width:80px;}
